@@ -1,6 +1,162 @@
+; The original Source/Author https://github.com/blacktop/zed-objc
+; MIT License
+
+; Copyright (c) 2025 blacktop
+
+; Permission is hereby granted, free of charge, to any person obtaining a copy
+; of this software and associated documentation files (the "Software"), to deal
+; in the Software without restriction, including without limitation the rights
+; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+; copies of the Software, and to permit persons to whom the Software is
+; furnished to do so, subject to the following conditions:
+
+; The above copyright notice and this permission notice shall be included in all
+; copies or substantial portions of the Software.
+
+; THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+; SOFTWARE.
+
 ; inherits: c
 
-; Needs Infra
+[
+  "const"
+  "enum"
+  "extern"
+  "inline"
+  "sizeof"
+  "static"
+  "struct"
+  "typedef"
+  "union"
+  "volatile"
+] @keyword
+
+[
+  "break"
+  "case"
+  "continue"
+  "default"
+  "do"
+  "else"
+  "for"
+  "goto"
+  "if"
+  "return"
+  "switch"
+  "while"
+] @keyword.control
+
+[
+  "#define"
+  "#elif"
+  "#else"
+  "#endif"
+  "#if"
+  "#ifdef"
+  "#ifndef"
+  "#include"
+  (preproc_directive)
+] @keyword
+
+[
+  "="
+  "+="
+  "-="
+  "*="
+  "/="
+  "%="
+  "&="
+  "|="
+  "^="
+  "<<="
+  ">>="
+  "++"
+  "--"
+  "+"
+  "-"
+  "*"
+  "/"
+  "%"
+  "~"
+  "&"
+  "|"
+  "^"
+  "<<"
+  ">>"
+  "!"
+  "&&"
+  "||"
+  "=="
+  "!="
+  "<"
+  ">"
+  "<="
+  ">="
+  "->"
+  "?"
+  ":"
+] @operator
+
+[
+  "."
+  ";"
+  ","
+] @punctuation.delimiter
+
+[
+  "{"
+  "}"
+  "("
+  ")"
+  "["
+  "]"
+] @punctuation.bracket
+
+[
+  (string_literal)
+  (system_lib_string)
+  (char_literal)
+] @string
+
+(comment) @comment
+
+(number_literal) @number
+
+[
+  (true)
+  (false)
+] @boolean
+
+(null) @constant.builtin
+
+(identifier) @variable
+
+((identifier) @constant
+ (#match? @constant "^_*[A-Z][A-Z\\d_]*$"))
+
+(call_expression
+  function: (identifier) @function)
+(call_expression
+  function: (field_expression
+    field: (field_identifier) @function))
+(function_declarator
+  declarator: (identifier) @function)
+(preproc_function_def
+  name: (identifier) @function.special)
+
+(field_identifier) @property
+(statement_identifier) @label
+
+[
+  (type_identifier)
+  (primitive_type)
+  (sized_type_specifier)
+] @type
 
 ; Preprocs
 
