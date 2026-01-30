@@ -1,7 +1,5 @@
 ; inherits: c
 
-; Needs Infra
-
 [
   (class_declaration)
   (class_interface)
