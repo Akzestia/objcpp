@@ -9,3 +9,6 @@
 grammars/
 target/
 *.wasm
+
+# Clang files
+.clang-format
