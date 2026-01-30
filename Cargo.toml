@@ -1,0 +1,18 @@
+[package]
+name = "objc"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+path = "src/objc.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+serde = { version = "1.0.219", features = ["derive"] }
+zed_extension_api = "0.6.0"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+strip = true
