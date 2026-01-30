@@ -1,0 +1,15 @@
+id = "objcpp"
+name = "Objective C++"
+description = "Support for Objective C with C++"
+version = "1.0.0"
+schema_version = 1
+authors = ["Akzestia <akzestia@gmail.com>"]
+repository = "https://github.com/Akzestia/objcpp"
+
+[language_servers.objc]
+name = "clangd"
+languages = ["Objective C++"]
+
+[grammars.objc]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-objc"
+commit = "181a81b8f23a2d593e7ab4259981f50122909fda"
