@@ -1,0 +1,11 @@
+# Test files
+*.mm
+*.hh
+*.cpp
+*.c
+*.h
+
+# Compile artifacts
+grammars/
+target/
+*.wasm
