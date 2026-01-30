@@ -2,7 +2,7 @@
 
 > [!IMPORTANT]
 > ## Credits
-> Most of the highlights used were taken from the following repo [zed-objc](https://github.com/blacktop/zed-objc) by [@blacktop](https://github.com/blacktop) </br>
+> Most of the queries used were taken from the following repo [zed-objc](https://github.com/blacktop/zed-objc) by [@blacktop](https://github.com/blacktop) </br>
 > 
 > In particular:
 > - brackets.scm
