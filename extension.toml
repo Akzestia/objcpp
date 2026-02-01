@@ -1,6 +1,6 @@
 id = "objcpp"
 name = "Objective C++"
-description = "Support for Objective C with C++"
+description = "Support for Objective C++"
 version = "1.0.0"
 schema_version = 1
 authors = ["Akzestia <akzestia@gmail.com>"]
