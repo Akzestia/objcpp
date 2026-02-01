@@ -189,7 +189,7 @@
   "@dynamic"
   "volatile"
   (protocol_qualifier)
-] @storageclass
+] @keyword
 
 ; Keywords
 
