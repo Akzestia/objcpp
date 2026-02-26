@@ -16,8 +16,7 @@
 > C grammar [repo](https://github.com/tree-sitter/tree-sitter-c) by [tree-sitter](https://github.com/tree-sitter) </br>
 > Objective-C grammar [repo](https://github.com/tree-sitter-grammars/tree-sitter-objc) by [tree-sitter](https://github.com/tree-sitter)
 
-
-Extension for Zed editor that adds support for Objective C++
+Support for Objective-C/C++ in Zed
 
 <img width="3440" height="1431" alt="image" src="https://github.com/user-attachments/assets/11e12f7d-9785-404a-bf9c-e1c618b8ee19" />
 
