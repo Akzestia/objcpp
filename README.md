@@ -13,7 +13,6 @@
 > - runnables.scm
 > - textobjects.scm
 > -----------------------
-> C grammar [repo](https://github.com/tree-sitter/tree-sitter-c) by [tree-sitter](https://github.com/tree-sitter) </br>
 > Objective-C grammar [repo](https://github.com/tree-sitter-grammars/tree-sitter-objc) by [tree-sitter](https://github.com/tree-sitter)
 
 Support for Objective-C/C++ in Zed
