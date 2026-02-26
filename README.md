@@ -14,7 +14,7 @@
 > - textobjects.scm
 > -----------------------
 > C grammar [repo](https://github.com/tree-sitter/tree-sitter-c) by [tree-sitter](https://github.com/tree-sitter) </br>
-> ObjC grammar [repo](https://github.com/tree-sitter-grammars/tree-sitter-objc) by [tree-sitter](https://github.com/tree-sitter)
+> Objective-C grammar [repo](https://github.com/tree-sitter-grammars/tree-sitter-objc) by [tree-sitter](https://github.com/tree-sitter)
 
 
 Extension for Zed editor that adds support for Objective C++
