@@ -1,6 +1,6 @@
-name = "Objective C++"
+name = "Objective-C"
 grammar = "objc"
-path_suffixes = ["mm", "hh"]
+path_suffixes = ["mm", "m", "hh", "h"]
 line_comments = ["// "]
 brackets = [
     { start = "{", end = "}", close = true, newline = true },
