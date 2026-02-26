@@ -1,8 +1,5 @@
 use zed::LanguageServerId;
-use zed_extension_api::{
-    self as zed, Command, DebugAdapterBinary, DebugRequest, DebugScenario, DebugTaskDefinition,
-    Result, StartDebuggingRequestArgumentsRequest, TaskTemplate, Worktree, serde_json::Value,
-};
+use zed_extension_api::{self as zed, Command, Result};
 
 struct ObjcLspExtension;
 
@@ -67,42 +64,6 @@ impl zed::Extension for ObjcLspExtension {
             ],
             env: Default::default(),
         })
-    }
-
-    fn get_dap_binary(
-        &mut self,
-        _adapter_name: String,
-        _config: DebugTaskDefinition,
-        _user_provided_debug_adapter_path: Option<String>,
-        _worktree: &Worktree,
-    ) -> Result<DebugAdapterBinary, String> {
-        todo!()
-    }
-
-    fn dap_request_kind(
-        &mut self,
-        _adapter_name: String,
-        _config: Value,
-    ) -> Result<StartDebuggingRequestArgumentsRequest, String> {
-        todo!()
-    }
-
-    fn dap_locator_create_scenario(
-        &mut self,
-        _locator_name: String,
-        _build_task: TaskTemplate,
-        _resolved_label: String,
-        _debug_adapter_name: String,
-    ) -> Option<DebugScenario> {
-        todo!()
-    }
-
-    fn run_dap_locator(
-        &mut self,
-        _locator_name: String,
-        _build_task: TaskTemplate,
-    ) -> Result<DebugRequest, String> {
-        todo!()
     }
 }
 
