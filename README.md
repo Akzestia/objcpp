@@ -20,3 +20,8 @@
 Extension for Zed editor that adds support for Objective C++
 
 <img width="3440" height="1431" alt="image" src="https://github.com/user-attachments/assets/11e12f7d-9785-404a-bf9c-e1c618b8ee19" />
+
+-----------------------
+
+> [!NOTE]
+> If you have any issues with the extension please open an issue on gihtub!
