@@ -7,7 +7,6 @@
 > In particular:
 > - brackets.scm
 > - highlights.scm
-> - embedfigs.scm
 > - imports.scm
 > - indents.scm
 > - injections.scm
