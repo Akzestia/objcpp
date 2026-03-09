@@ -6,8 +6,8 @@ schema_version = 1
 authors = ["Akzestia <akzestia@gmail.com>"]
 repository = "https://github.com/Akzestia/objcpp"
 
-[language_servers.clangd]
-name = "clangd"
+[language_servers.objc-clangd]
+name = "objc-clangd"
 languages = ["Objective-C"]
 
 [grammars.objc]
