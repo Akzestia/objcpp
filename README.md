@@ -23,19 +23,32 @@ Support for Objective-C/C++ in Zed
 
 ## Setup
 
-Since Zed has a built-in `clangd` language server, you need to configure your settings to use `objcpp-clangd` for Objective-C files. Add the following to your Zed `settings.json`:
+Since Zed has a built-in `clangd` language server, you need to configure your settings to use `objcpp-clangd` for Objective-C/C++ files. Add the following to your Zed `settings.json`:
 
 ```json
 {
   "languages": {
     "Objective-C": {
       "language_servers": ["objcpp-clangd", "!clangd"]
+    },
+    "Objective-C++": {
+      "language_servers": ["objcpp-clangd", "!clangd"]
     }
   }
 }
 ```
 
-This enables `objcpp-clangd` (provided by this extension) and disables the built-in `clangd` for Objective-C files.
+If Zed doesn't recognize `.m`/`.mm` files as Objective-C, you may also need:
+
+```json
+{
+  "file_types": {
+    "Objective-C": ["m", "mm"]
+  }
+}
+```
+
+This enables `objcpp-clangd` (provided by this extension) and disables the built-in `clangd` for Objective-C/C++ files.
 
 <img width="3440" height="1431" alt="image" src="https://github.com/user-attachments/assets/11e12f7d-9785-404a-bf9c-e1c618b8ee19" />
 
