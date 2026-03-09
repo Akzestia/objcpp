@@ -39,7 +39,7 @@ impl zed::Extension for ObjcLspExtension {
     ) -> Result<Command> {
         let path = worktree
             .which("clangd")
-            .ok_or_else(|| "clangd must be installed and available in PATH".to_string())?;
+            .ok_or_else(|| "objcpp-clangd: clangd must be installed and available in PATH".to_string())?;
 
         Ok(zed::Command {
             command: path,
