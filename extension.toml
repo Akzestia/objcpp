@@ -1,7 +1,7 @@
 id = "objective-c"
 name = "Objective-C"
 description = "Support for Objective-C"
-version = "1.0.0"
+version = "1.0.1"
 schema_version = 1
 authors = ["Akzestia <akzestia@gmail.com>"]
 repository = "https://github.com/Akzestia/objcpp"
